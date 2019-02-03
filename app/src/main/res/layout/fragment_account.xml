@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <LinearLayout
+        style="@style/pages_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <com.axon1.axonapps.customviews.English_Button
+            android:id="@+id/btnAccountLogin"
+            style="@style/pages_account_login_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Pages_Login_Login" />
+
+        <com.axon1.axonapps.customviews.English_Button
+            android:id="@+id/btnAccountJoinUs"
+            style="@style/pages_login_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:text="@string/Pages_Login_JoinUs" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash_footer"
+        android:layout_gravity="bottom"
+        android:scaleType="fitEnd"/>
+</FrameLayout>

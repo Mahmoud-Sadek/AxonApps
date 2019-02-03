@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15.0dip"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:weightSum="9.5">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50.0dip">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgAppointmentMemberAvatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50.0dip"
+                    android:src="@drawable/user" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.0"
+            android:gravity="left"
+            android:layout_marginStart="4dp"
+            android:orientation="vertical">
+
+            <com.axon1.axonapps.customviews.English_M_TextView
+                android:id="@+id/lblAppointmentMemberName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Dr. Eslam Ali"
+                android:textColor="@color/color_blue"
+                android:textSize="@dimen/textSize_medium"
+                android:textStyle="bold" />
+
+
+            <com.axon1.axonapps.customviews.English_L_TextView
+                android:id="@+id/lblAppointmentMemberId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Clinic"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/color_blue2"
+                android:textSize="@dimen/textSize_small" />
+
+            <com.axon1.axonapps.customviews.English_L_TextView
+                android:id="@+id/lblAppointmentType"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Specialist / Neurologist"
+                android:textColor="@color/color_blue"
+
+                android:textSize="@dimen/textSize_small" />
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/RatingBar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.0"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnAppointmentCheckIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_border_blue"
+                android:gravity="center"
+                android:padding="5.0dip"
+                android:src="@drawable/ic_favorite_black_24dp" />
+
+            <com.axon1.axonapps.customviews.English_Button
+                android:id="@+id/btnSubmitRequest"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/button_login_border"
+                android:text="@string/Row_Physiotherapy_BookNow"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

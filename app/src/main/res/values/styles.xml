@@ -1,0 +1,88 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="list_form">
+        <item name="android:gravity">right</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="pages_login_button">
+        <item name="android:textSize">@dimen/textSize_medium</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:background">@drawable/button_login_border</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/color_gray</item>
+        <item name="colorControlActivated">@color/color_blue2</item>
+    </style>
+    <style name="pages_social_button">
+        <item name="android:textSize">@dimen/textSize_medium</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:background">@drawable/button_social_border</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="pages_account_login_button">
+        <item name="android:textSize">@dimen/textSize_medium</item>
+        <item name="android:textColor">@color/color_blue</item>
+        <item name="android:background">@drawable/button_border_blue</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="pages_login_label">
+        <item name="android:textSize">@dimen/textSize_medium</item>
+        <item name="android:textColor">@color/color_blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="pages_login_layout">
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="pages_login_text">
+        <item name="android:textSize">@dimen/textSize_medium</item>
+        <item name="android:textColor">@color/color_blue</item>
+        <item name="android:textColorHint">@color/color_dark_gray</item>
+        <item name="android:gravity">center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/text_login_border</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textSize">@dimen/textSize_medium</item>
+        <item name="android:textColor">@color/color_blue</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="tooltip_bubble_text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">left</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.25</item>
+    </style>
+</resources>

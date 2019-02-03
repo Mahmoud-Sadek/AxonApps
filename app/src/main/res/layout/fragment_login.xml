@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:scaleType="fitEnd"
+        android:src="@drawable/splash_footer" />
+    <LinearLayout
+        style="@style/pages_login_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.axon1.axonapps.customviews.English_M_TextView
+            style="@style/pages_login_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Pages_Login_Login"
+            android:textColor="@color/color_blue" />
+
+        <com.axon1.axonapps.customviews.English_EditText
+            android:id="@+id/txtLoginUsername"
+            style="@style/pages_login_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/Pages_Login_UserName"
+            android:inputType="text"
+            android:textSize="@dimen/textSize_medium" />
+
+        <com.axon1.axonapps.customviews.English_EditText
+            android:id="@+id/txtLoginPassword"
+            style="@style/pages_login_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:gravity="center"
+            android:hint="@string/Pages_Login_Password"
+            android:inputType="textPassword"
+            android:textSize="@dimen/textSize_medium" />
+
+        <com.axon1.axonapps.customviews.English_M_TextView
+            android:id="@+id/btnForgetPassword"
+            style="@style/pages_login_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Pages_Login_ForgetPassword"
+            android:textColor="@color/color_blue" />
+
+        <com.axon1.axonapps.customviews.English_M_TextView
+            style="@style/pages_login_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/or_login_using"
+            android:textColor="@color/color_blue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnFacebook"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_social_border"
+                android:padding="10dp"
+                android:src="@drawable/facebook" />
+
+            <ImageView
+                android:id="@+id/btnGoogle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_social_border"
+                android:padding="10dp"
+                android:src="@drawable/google" />
+
+            <ImageView
+                android:id="@+id/btnTwitter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_social_border"
+                android:padding="10dp"
+                android:src="@drawable/twiter" />
+        </LinearLayout>
+
+        <com.axon1.axonapps.customviews.English_Button
+            android:id="@+id/btnLogin"
+            style="@style/pages_login_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:text="@string/Pages_Login_Login" />
+    </LinearLayout>
+
+
+</FrameLayout>
